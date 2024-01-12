@@ -41,6 +41,11 @@ h3 {
     color: #3498db;
 }
 
+ .wrap {
+   float: right; 
+   margin: 5px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
