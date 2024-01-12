@@ -191,5 +191,43 @@ footer {
         width: 100%; /* Set to full width on screens 800px or smaller */
         content-align: centre;
     }
+    /* Mobile-friendly styles */
+body {
+    font-size: 16px; /* Adjust as needed for readability */
+}
+
+header {
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 1.5em; /* Adjust the heading size */
+}
+
+header p {
+    font-size: 0.9em; /* Adjust the paragraph size */
+}
+
+section {
+    padding: 10px;
+}
+
+h2, h3 {
+    font-size: 1.2em; /* Adjust heading sizes */
+}
+
+nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav a {
+    margin: 5px;
+}
+
+#backToTopBtn {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust button padding */
+}
 }
 
