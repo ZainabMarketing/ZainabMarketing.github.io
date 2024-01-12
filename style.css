@@ -258,3 +258,36 @@ nav a {
     }
 }
 
+/* Add these styles for desktop view */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menuToggle {
+    display: none; /* Hide the menu toggle button on larger screens */
+}
+
+#mobileNav {
+    display: none; /* Hide the mobile navigation by default */
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    /* Media query for smaller screens */
+
+    nav {
+        display: none; /* Hide the regular navigation on smaller screens */
+    }
+
+    #menuToggle {
+        display: block; /* Show the menu toggle button on smaller screens */
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #backToTopBtn {
+        bottom: 120px; /* Adjust the back-to-top button position */
+    }
+}
