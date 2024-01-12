@@ -153,4 +153,7 @@ footer {
     section {
         width: 100%; /* Set to full width on screens 800px or smaller */
     }
+    header {
+        width: 100%; /* Set to full width on screens 800px or smaller */
+    }
 }
