@@ -160,7 +160,7 @@ img {
 
 #backToTopBtn {
     position: fixed;
-    bottom: 20px;
+    bottom: 120px; /* Adjusted to be 100px higher */
     right: 20px;
     background-color: #3498db;
     color: #ecf0f1;
@@ -169,7 +169,7 @@ img {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    display: none; /* Hide the button by default */
+    display: none;
 }
 
 #backToTopBtn:hover {
