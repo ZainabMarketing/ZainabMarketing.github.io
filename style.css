@@ -73,6 +73,45 @@ footer {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
+    /* Mobile navigation styles */
+#menuToggle {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ecf0f1;
+    margin-right: 15px;
+}
+
+#menuToggle:hover {
+    color: #3498db;
+}
+
+#mobileNav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #34495e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mobileNav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#mobileNav a:hover {
+    color: #3498db;
+}
+    
     header h1 {
         font-size: 2em;
         margin-bottom: 10px;
