@@ -20,6 +20,18 @@ nav {
     padding: 10px 0;
 }
 
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
 header h1 {
     font-size: 2em;
     margin-bottom: 10px;
