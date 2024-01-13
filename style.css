@@ -184,19 +184,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* Media Query for Responsive Design */
-@media screen and (max-width: 500px) {
-    /* Set to full width on screens 500px or smaller */
-    section {
-        width: 100%;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    #backToTopBtn {
-        bottom: 20px;
-    }
-}
