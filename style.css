@@ -186,7 +186,7 @@ footer {
 }
 
 /* Media Query for Responsive Design */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1540px) {
     /* Set to full width on screens 1440px or smaller */
     section {
         width: 100%;
