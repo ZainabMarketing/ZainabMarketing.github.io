@@ -291,3 +291,42 @@ nav {
         bottom: 120px; /* Adjust the back-to-top button position */
     }
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#backToTopBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 800px) {
+    /* Set to full width on screens 800px or smaller */
+    section {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #backToTopBtn {
+        bottom: 20px; /* Adjust the back-to-top button position for smaller screens */
+    }
+}
