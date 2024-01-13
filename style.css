@@ -186,8 +186,8 @@ footer {
 }
 
 /* Media Query for Responsive Design */
-@media screen and (max-width: 800px) {
-    /* Set to full width on screens 800px or smaller */
+@media screen and (max-width: 1440px) {
+    /* Set to full width on screens 1440px or smaller */
     section {
         width: 100%;
     }
