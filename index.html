@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Select all navigation links
-        var navLinks = document.querySelectorAll('nav a');
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all navigation links
+            var navLinks = document.querySelectorAll('nav a');
 
-        // Add a click event listener to each link
-        navLinks.forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                // Prevent the default behavior of the link
-                event.preventDefault();
+            // Add a click event listener to each link
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    // Prevent the default behavior of the link
+                    event.preventDefault();
 
-                // Get the target section ID from the link's href attribute
-                var targetSectionId = link.getAttribute('href').substring(1);
+                    // Get the target section ID from the link's href attribute
+                    var targetSectionId = link.getAttribute('href').substring(1);
 
-                // Find the target section
-                var targetSection = document.getElementById(targetSectionId);
+                    // Find the target section
+                    var targetSection = document.getElementById(targetSectionId);
 
-                // Scroll to the target section smoothly
-                targetSection.scrollIntoView({ behavior: 'smooth' });
+                    // Scroll to the target section smoothly
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                });
             });
         });
-    });
-</script>
+    </script>
     <script>
-    // Function to scroll to the top of the page
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Function to show or hide the back to top button based on scroll position
-    window.onscroll = function () {
-        var backToTopBtn = document.getElementById('backToTopBtn');
-
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopBtn.style.display = 'block';
-        } else {
-            backToTopBtn.style.display = 'none';
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    };
-</script>
+
+        // Function to show or hide the back to top button based on scroll position
+        window.onscroll = function () {
+            var backToTopBtn = document.getElementById('backToTopBtn');
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+    </script>
     <script>
-    function toggleMenu() {
-        var mobileNav = document.getElementById('mobileNav');
-        mobileNav.style.display = (mobileNav.style.display === 'block') ? 'none' : 'block';
-    }
-</script>
+        function toggleMenu() {
+            var mobileNav = document.getElementById('mobileNav');
+            mobileNav.style.display = (mobileNav.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
     <title>Zainab Ibrahim - Portfolio</title>
 </head>
-<body>
 
+<body>
     <header>
         <h1>Zainab Ibrahim</h1>
         <p>Digital Marketer</p>
         <button id="menuToggle" onclick="toggleMenu()">☰ Menu</button>
-<nav id="mobileNav">
-    <a href="#about">About</a>
-        <a href="#blog">Blog</a>
-        <a href="#resume">Skills</a>
-        <a href="#work-experience">Work Experience</a>
-        <a href="#digital-marketing-skills">Digital Marketing Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-</nav>
+        <nav id="mobileNav">
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#resume">Skills</a>
+            <a href="#work-experience">Work Experience</a>
+            <a href="#digital-marketing-skills">Digital Marketing Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
         <div class="wrap">
-        <img src="moris.jpg" alt="Profile Pic">
+            <img src="moris.jpg" alt="Profile Pic">
         </div>
-        <p>As a devoted stay-at-home mother of four, engaged in the noble task of home educating my children, I embarked on a transformative journey towards becoming a digital marketer. Recognizing the need for personal and professional growth, I took the proactive step of enrolling in a Level 3 digital marketing course, all while navigating the intricate tapestry of homeschooling alongside my children.
-The decision to delve into the realm of digital marketing was driven by a sincere aspiration for a future career change. This journey has proven to be nothing short of inspiring, as it not only aligns with my lifelong passion for computing but also broadens the horizons of my capabilities.
-Throughout this educational expedition, I have eagerly absorbed the latest trends and advancements in the dynamic field of digital marketing. From social media strategies to search engine optimization, each module has contributed to a comprehensive understanding of the industry's ever-evolving landscape.
-Looking ahead, I am enthusiastic about the prospect of applying this newfound knowledge to carve out my path as a freelancer digital marketer. The synthesis of my familial responsibilities and academic pursuits has equipped me with a unique perspective and a tenacity to navigate the challenges that lie ahead. I eagerly anticipate the opportunity to blend my passion for digital marketing with my commitment to family, creating a fulfilling and dynamic career that aligns seamlessly with the intricacies of my life.
-</p>
+        <p>As a devoted stay-at-home mother of four, engaged in the noble task of home educating my children, I embarked on a transformative journey towards becoming a digital marketer. Recognizing the need for personal and professional growth, I took the proactive step of enrolling in a Level 3 digital marketing course, all while navigating the intricate tapestry of homeschooling alongside my children. The decision to delve into the realm of digital marketing was driven by a sincere aspiration for a future career change. This journey has proven to be nothing short of inspiring, as it not only aligns with my lifelong passion for computing but also broadens the horizons of my capabilities. Throughout this educational expedition, I have eagerly absorbed the latest trends and advancements in the dynamic field of digital marketing. From social media strategies to search engine optimization, each module has contributed to a comprehensive understanding of the industry's ever-evolving landscape. Looking ahead, I am enthusiastic about the prospect of applying this newfound knowledge to carve out my path as a freelancer digital marketer. The synthesis of my familial responsibilities and academic pursuits has equipped me with a unique perspective and a tenacity to navigate the challenges that lie ahead. I eagerly anticipate the opportunity to blend my passion for digital marketing with my commitment to family, creating a fulfilling and dynamic career that aligns seamlessly with the intricacies of my life.
+        </p>
     </section>
 
     <section id="blog">
@@ -131,7 +129,7 @@ Looking ahead, I am enthusiastic about the prospect of applying this newfound kn
         <h2>Level 3 Digital Marketing Skills Acquired</h2>
         <h3>Digital Portfolio Development (Oct 2023)</h3>
         <ul>
-            
+            <li>
                 <ul>
                     <li>Portfolio and CV Creation</li>
                     <li>LinkedIn Integration</li>
@@ -143,79 +141,79 @@ Looking ahead, I am enthusiastic about the prospect of applying this newfound kn
                 </ul>
             </li>
             <h3>Customer Lifecycle Integration (Oct 2023)</h3>
-                <ul>
-                    <li>Marketing Strategies at Each Lifecycle Stage</li>
-                    <li>Campaign Design</li>
-                    <li>User Journey Enhancement</li>
-                    <li>Data Analysis for Business Expansion</li>
-                </ul>
+            <ul>
+                <li>Marketing Strategies at Each Lifecycle Stage</li>
+                <li>Campaign Design</li>
+                <li>User Journey Enhancement</li>
+                <li>Data Analysis for Business Expansion</li>
+            </ul>
             </li>
             <h3>Market Strategies Expertise (Oct 2023)</h3>
-                <ul>
-                    <li>Digital Marketing Strategies</li>
-                    <li>SEO Focus</li>
-                    <li>Social Media Marketing</li>
-                    <li>Content and Email Marketing</li>
-                </ul>
+            <ul>
+                <li>Digital Marketing Strategies</li>
+                <li>SEO Focus</li>
+                <li>Social Media Marketing</li>
+                <li>Content and Email Marketing</li>
+            </ul>
             </li>
             <h3>Competitor Analysis (Nov 2023)</h3>
-                <ul>
-                    <li>Competitor Strengths and Weaknesses Assessment</li>
-                    <li>Product Positioning Understanding</li>
-                    <li>Market Trend Analysis</li>
-                    <li>Price Strategy Evaluation</li>
-                </ul>
+            <ul>
+                <li>Competitor Strengths and Weaknesses Assessment</li>
+                <li>Product Positioning Understanding</li>
+                <li>Market Trend Analysis</li>
+                <li>Price Strategy Evaluation</li>
+            </ul>
             </li>
             <h3>Market Segmentation Proficiency (Nov 2023)</h3>
-                <ul>
-                    <li>Diverse Customer Group Identification</li>
-                    <li>Demographic, Psychographic, Behavioral Factors Analysis</li>
-                    <li>Effective Communication</li>
-                    <li>Product Customization</li>
-                </ul>
+            <ul>
+                <li>Diverse Customer Group Identification</li>
+                <li>Demographic, Psychographic, Behavioral Factors Analysis</li>
+                <li>Effective Communication</li>
+                <li>Product Customization</li>
+            </ul>
             </li>
             <h3>SEO Optimization Skills (Dec 2023)</h3>
-                <ul>
-                    <li>Website Visibility Improvement</li>
-                    <li>Keyword Research and Integration</li>
-                    <li>Content Optimization</li>
-                    <li>High-Quality Backlink Building</li>
-                    <li>Social Media Engagement</li>
-                </ul>
+            <ul>
+                <li>Website Visibility Improvement</li>
+                <li>Keyword Research and Integration</li>
+                <li>Content Optimization</li>
+                <li>High-Quality Backlink Building</li>
+                <li>Social Media Engagement</li>
+            </ul>
             </li>
             <h3>Email Marketing Excellence (Dec 2023)</h3>
-                <ul>
-                    <li>Email Campaign Design</li>
-                    <li>Call to Action Crafting</li>
-                    <li>Product Explanation Strategies</li>
-                    <li>Audience Engagement</li>
-                    <li>Lead Generation and Customer Retention</li>
-                </ul>
+            <ul>
+                <li>Email Campaign Design</li>
+                <li>Call to Action Crafting</li>
+                <li>Product Explanation Strategies</li>
+                <li>Audience Engagement</li>
+                <li>Lead Generation and Customer Retention</li>
+            </ul>
             </li>
             <h3>Integrated Marketing Approach (Dec 2023)</h3>
-                <ul>
-                    <li>Traditional and Digital Marketing Integration</li>
-                    <li>Networking and Personal Connections</li>
-                    <li>Professional Website Development</li>
-                    <li>Social Media Engagement</li>
-                    <li>Targeted Online Advertising</li>
-                </ul>
+            <ul>
+                <li>Traditional and Digital Marketing Integration</li>
+                <li>Networking and Personal Connections</li>
+                <li>Professional Website Development</li>
+                <li>Social Media Engagement</li>
+                <li>Targeted Online Advertising</li>
+            </ul>
             </li>
             <h3>Compelling Content Creation (Dec 2024)</h3>
-                <ul>
-                    <li>Campaign Content Development</li>
-                    <li>Key Message Conveyance</li>
-                    <li>Tailoring Content to Target Audience</li>
-                    <li>Impactful Communication Strategy</li>
-                </ul>
+            <ul>
+                <li>Campaign Content Development</li>
+                <li>Key Message Conveyance</li>
+                <li>Tailoring Content to Target Audience</li>
+                <li>Impactful Communication Strategy</li>
+            </ul>
             </li>
             <h3>SMART Strategies Implementation (Jan 2024)</h3>
-                <ul>
-                    <li>Specific Business Goal Setting</li>
-                    <li>Performance Measurement Using Relevant Metrics</li>
-                    <li>Achievable Task Alignment</li>
-                    <li>Realistic Timeframes for Accomplishments</li>
-                </ul>
+            <ul>
+                <li>Specific Business Goal Setting</li>
+                <li>Performance Measurement Using Relevant Metrics</li>
+                <li>Achievable Task Alignment</li>
+                <li>Realistic Timeframes for Accomplishments</li>
+            </ul>
             </li>
         </ul>
     </section>
@@ -229,7 +227,6 @@ Looking ahead, I am enthusiastic about the prospect of applying this newfound kn
         <p>Hubspot Academy social media certified</p>
         <p>Level 3 digital marketing 2023 ongoing</p>
     </section>
-
 
     <section id="projects">
         <h2>Projects</h2>
